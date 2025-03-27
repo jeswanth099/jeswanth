@@ -1,0 +1,15 @@
+20250327	16:28:38	11ef7e83-870a-4dfd-b889-c60b3fd951e2	GET	undefined	/new-page.html
+20250327	16:28:38	66eb9e30-1b0c-443d-a065-5a9ecf29afd4	GET	undefined	/css/style.css
+20250327	16:28:38	acdaf6b8-96be-4d2d-8567-e60c1c7b46bd	GET	undefined	/img/img1.jpg
+20250327	16:28:39	bbccc504-06a7-4383-afb1-b458272aec84	GET	undefined	/new-page.html
+20250327	16:28:39	0422ec42-a3d8-422c-a15b-46214c4f087a	GET	undefined	/css/style.css
+20250327	16:28:39	4c215d77-a019-459f-b3fe-7541ff0f4416	GET	undefined	/img/img1.jpg
+20250327	16:28:39	000e0567-836d-4dcf-aba8-3a8a3fc0a5ad	GET	undefined	/new-page.html
+20250327	16:28:39	07d851c1-adb3-44f2-b3a7-57d9e20604f7	GET	undefined	/css/style.css
+20250327	16:28:39	4521fa44-3cc4-4c29-8112-4898109dc484	GET	undefined	/img/img1.jpg
+20250327	16:28:39	af8efd18-7d02-4497-9336-99629aec2f9c	GET	undefined	/new-page.html
+20250327	16:28:39	2ff2878c-8910-457c-a81a-478f8d4e7e87	GET	undefined	/css/style.css
+20250327	16:28:39	2a853b1c-b32b-45f5-978e-a381f1551738	GET	undefined	/img/img1.jpg
+20250327	16:28:39	310d4606-4528-4dff-8d3f-43bdf63b9751	GET	undefined	/new-page.html
+20250327	16:28:39	d8ae83ad-628d-4512-8ef4-7374239310b1	GET	undefined	/css/style.css
+20250327	16:28:39	6026e059-1246-43b9-ab76-412766d6654e	GET	undefined	/img/img1.jpg
