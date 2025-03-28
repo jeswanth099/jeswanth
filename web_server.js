@@ -1,7 +1,8 @@
 const express=require('express')
 const app = express()
 const path=require('path')
-const cors=require('cors')
+const cors =require('cors')
+const corsOptions = require('./config/corsOption')
 const logEvent = require('./middleware1/logEvents.js')
 const errosHandel=require('./middleware1/errosHandler.js')
 const PORT=process.env.PORT|| 3500;
@@ -11,19 +12,6 @@ app.use ((req,res,next)=>{
     console.log(`${req.method} ${req.path}`)
     next()
 })
-
-app.use(cors())
-const whitelist =('https://www.google.com/','https://127.0.0.1.5500','https://localhost:3500')
-const corsOptions = {
-    origin: (origin, callback) => {
-        if (whitelist.indexOf(origin) !== -1|| !origin) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    optionSuccessStatius:200
-}
 app.use(cors(corsOptions))
 
 // bulid in middleware
@@ -31,17 +19,15 @@ app.use(express.urlencoded({extended:false}))// url encoded middleware for to  u
 app.use(express.json())// to handle json files
 app.use('/',express.static(path.join(__dirname,'./public')))//to access public folder
 app.use('/subdir',express.static(path.join(__dirname,'./public')))
+ // routes
 app.use('/',require('./routes/root'))
 app.use('/subdir',require('./routes/subdir'))
-
+app.use('/employees',require('./routes/api/employees'))
 // custom middleware
 app.use ((req,res,next)=>{
     console.log(`${req.method} ${req.path}`)
     next()
 })
-
-
-
 /*app.get('/hello(.html)?',(req,res,next)=>
 {console.log('hello.html page loadeding'); 
 next();},
@@ -55,7 +41,7 @@ const two=(req,res,next)=>{
     next();
 }
 const three=(req,res,)=>{
-    console.log('one'); 
+    console.log('one');
     res.send('Finished')   
 }
 app.get('/chain(.html)?',[one,two,three])*/
