@@ -14,7 +14,7 @@ app.use ((req,res,next)=>{
 })
 app.use(cors(corsOptions))
 
-// bulid in middleware
+// build in middleware
 app.use(express.urlencoded({extended:false}))// url encoded middleware for to  use user data
 app.use(express.json())// to handle json files
 app.use('/',express.static(path.join(__dirname,'./public')))//to access public folder
